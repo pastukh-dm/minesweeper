@@ -1,0 +1,135 @@
+{
+  "frames": {
+    "1_IDLE_000.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 623,
+        "h": 775
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 37,
+        "y": 6,
+        "w": 623,
+        "h": 775
+      },
+      "sourceSize": {
+        "w": 675,
+        "h": 781
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "1_IDLE_001.png": {
+      "frame": {
+        "x": 0,
+        "y": 775,
+        "w": 617,
+        "h": 770
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 32,
+        "y": 11,
+        "w": 617,
+        "h": 770
+      },
+      "sourceSize": {
+        "w": 675,
+        "h": 781
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "1_IDLE_004.png": {
+      "frame": {
+        "x": 617,
+        "y": 775,
+        "w": 617,
+        "h": 770
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 32,
+        "y": 11,
+        "w": 617,
+        "h": 770
+      },
+      "sourceSize": {
+        "w": 675,
+        "h": 781
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "1_IDLE_002.png": {
+      "frame": {
+        "x": 623,
+        "y": 0,
+        "w": 610,
+        "h": 766
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 27,
+        "y": 15,
+        "w": 610,
+        "h": 766
+      },
+      "sourceSize": {
+        "w": 675,
+        "h": 781
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "1_IDLE_003.png": {
+      "frame": {
+        "x": 1233,
+        "y": 0,
+        "w": 610,
+        "h": 766
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 27,
+        "y": 15,
+        "w": 610,
+        "h": 766
+      },
+      "sourceSize": {
+        "w": 675,
+        "h": 781
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "hero_idle.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1843,
+      "h": 1545
+    },
+    "scale": 1
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "frames": {
+    "2_WALK_000.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 597,
+        "h": 782
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 45,
+        "y": 4,
+        "w": 597,
+        "h": 782
+      },
+      "sourceSize": {
+        "w": 705,
+        "h": 800
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "2_WALK_001.png": {
+      "frame": {
+        "x": 0,
+        "y": 782,
+        "w": 617,
+        "h": 774
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 51,
+        "y": 7,
+        "w": 617,
+        "h": 774
+      },
+      "sourceSize": {
+        "w": 705,
+        "h": 800
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "2_WALK_002.png": {
+      "frame": {
+        "x": 597,
+        "y": 0,
+        "w": 643,
+        "h": 771
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 48,
+        "y": 10,
+        "w": 643,
+        "h": 771
+      },
+      "sourceSize": {
+        "w": 705,
+        "h": 800
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "2_WALK_003.png": {
+      "frame": {
+        "x": 1240,
+        "y": 0,
+        "w": 643,
+        "h": 771
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 48,
+        "y": 10,
+        "w": 643,
+        "h": 771
+      },
+      "sourceSize": {
+        "w": 705,
+        "h": 800
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "2_WALK_004.png": {
+      "frame": {
+        "x": 0,
+        "y": 782,
+        "w": 617,
+        "h": 774
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 51,
+        "y": 7,
+        "w": 617,
+        "h": 774
+      },
+      "sourceSize": {
+        "w": 705,
+        "h": 800
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "hero_walk.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 2011,
+      "h": 1556
+    },
+    "scale": 1
+  }
+}

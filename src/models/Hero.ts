@@ -1,61 +1,70 @@
-import { Graphics } from "pixi.js";
+import { AnimatedSprite, Texture } from "pixi.js";
+import gsap from "gsap";
 
+type AnimationName = "idle" | "walk" | "hurt" | "die";
 
-const DEFAULT_COLOR = 0x00ff00; // Green
-const EXPLOSION_COLOR = 0xff0000; // Red
-const YELLOW_COLOR = 0xffff00; // Yellow
-
-export class Hero extends Graphics {
+export class Hero extends AnimatedSprite {
   public isExploding: boolean = false;
+  public frames: { [key: string]: Texture[] };
+  public currentAnimation: string;
   private size: number;
 
-  constructor(size: number) {
-    super();
+  constructor(
+    size: number,
+    textures: { [key in AnimationName]: Texture[] },
+    initialAnimation: AnimationName = "idle"
+  ) {
+    super(textures[initialAnimation]);
+    this.frames = textures;
+    this.currentAnimation = initialAnimation;
+    this.scale.set(size / 781);
+    this.anchor.set(0.5);
+    this.animationSpeed = 0.2;
     this.size = size;
-    this.pivot.set(size / 2, size / 2);
-    this.x = size;
-    this.y = size;
-    this.drawHero();
+    this.play();
+  }
+  reset() {
+    this.scale.set(this.size / 781);
   }
 
   setPosition(x: number, y: number) {
+    console.log(`Setting hero position to (${x}, ${y})`);
     this.x = x;
     this.y = y;
     return this;
   }
 
-  drawHero(color: number = DEFAULT_COLOR) {
-    this.clear()
-      .rect(-this.size / 2, -this.size / 2, this.size, this.size)
-      .fill({ color });
+  playAnimation(animation: AnimationName) {
+    if (this.currentAnimation !== animation) {
+      this.currentAnimation = animation;
+      this.textures = this.frames[animation];
+      this.loop = true;
+      this.play();
+    }
   }
 
-  startExplosion(onComplete: () => void) {
-    this.isExploding = true;
-    let explosionCount = 0;
+  playAnimationOnce(animation: AnimationName, onComplete?: () => void) {
+    if (this.currentAnimation !== animation) {
+      this.currentAnimation = animation;
+      this.textures = this.frames[animation];
+      this.loop = false;
+      this.play();
 
-    const explosionInterval = setInterval(() => {
-      // Toggle scale and color to create explosion effect
-    //   this.scale.set(explosionCount % 2 === 0 ? 1.5 : 1);
-      this.drawHero(explosionCount % 2 === 0 ? YELLOW_COLOR : EXPLOSION_COLOR);
-
-      explosionCount++;
-
-      if (explosionCount > 6) { // End explosion after a few cycles
-        clearInterval(explosionInterval);
-
-        // Reset scale and color to normal
-        // this.scale.set(1);
-        this.drawHero(EXPLOSION_COLOR); // Final red color
-
-        this.isExploding = false;
-        onComplete(); // Callback to proceed to next game state
-      }
-    }, 100);
+      this.onComplete = () => {
+        this.onComplete = undefined;
+        if (onComplete) onComplete();
+      };
+    }
   }
 
-  stopExplosion() {
-    this.isExploding = false;
-    this.drawHero(DEFAULT_COLOR);
+  moveTo(x: number, y: number, onComplete?: () => void) {
+    this.playAnimation("walk");
+
+    gsap.to(this, {
+      x,
+      y,
+      duration: 1,
+      onComplete,
+    });
   }
 }

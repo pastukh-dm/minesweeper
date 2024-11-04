@@ -1,0 +1,135 @@
+{
+  "frames": {
+    "7_DIE_009.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 810,
+        "h": 470
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 231,
+        "y": 386,
+        "w": 810,
+        "h": 470
+      },
+      "sourceSize": {
+        "w": 1063,
+        "h": 890
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "7_DIE_004.png": {
+      "frame": {
+        "x": 810,
+        "y": 0,
+        "w": 631,
+        "h": 791
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 180,
+        "y": 30,
+        "w": 631,
+        "h": 791
+      },
+      "sourceSize": {
+        "w": 1063,
+        "h": 890
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "7_DIE_000.png": {
+      "frame": {
+        "x": 0,
+        "y": 470,
+        "w": 573,
+        "h": 775
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 133,
+        "y": 22,
+        "w": 573,
+        "h": 775
+      },
+      "sourceSize": {
+        "w": 1063,
+        "h": 890
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "7_DIE_006.png": {
+      "frame": {
+        "x": 0,
+        "y": 1043,
+        "w": 627,
+        "h": 731
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 227,
+        "y": 123,
+        "w": 627,
+        "h": 731
+      },
+      "sourceSize": {
+        "w": 1063,
+        "h": 890
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "7_DIE_002.png": {
+      "frame": {
+        "x": 627,
+        "y": 1043,
+        "w": 728,
+        "h": 719
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 45,
+        "y": 94,
+        "w": 728,
+        "h": 719
+      },
+      "sourceSize": {
+        "w": 1063,
+        "h": 890
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "hero_die.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1601,
+      "h": 1774
+    },
+    "scale": 1
+  }
+}
